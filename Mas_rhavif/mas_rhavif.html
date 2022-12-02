@@ -1,0 +1,83 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Machine Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  </head>
+  <body>
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-8 dark:bg-gray-900">
+      <h1 class="text-white pl-4 font-serif font-medium text-xl">
+        Rhavif Budiboy
+      </h1>
+    </nav>
+    <div class="flex justify-start">
+      <div class="pl-8 pt-6 pr-4">
+        <button
+          type="button"
+          id="custom-button"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-serif py-2 px-4 rounded flex items-center">
+          <span class="material-icons pr-2"> file_open </span>
+          Open file
+        </button>
+      </div>
+      <span id="custom-text" class="pt-9 font-serif">No file chosen, yet.</span>
+      <input type="file" id="real-file" hidden="hidden" />
+    </div>
+    <div class="pl-8 pt-6 pr-4">
+      <button
+        class="bg-green-400 hover:bg-green-600 text-white font-serif py-2 px-4 rounded flex items-center">
+        <span class="material-icons pr-2"> upload_file </span>
+        Upload
+      </button>
+    </div>
+
+    <div class="pl-8 pt-6 pr-4">
+      <div
+        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:border-black">
+        <div class="px-4">
+          <span class="font-serif">Choose Model :</span>
+        </div>
+        <div class="px-4 pt-8">
+          <button
+            class="bg-red-400 hover:bg-red-700 text-white font-serif py-2 px-4 rounded"
+            id="buttonA">
+            Model A
+          </button>
+          <button
+            class="bg-red-400 hover:bg-red-700 text-white font-serif py-2 px-4 rounded"
+            id="buttonB">
+            Model B
+          </button>
+          <button
+            class="bg-red-400 hover:bg-red-700 text-white font-serif py-2 px-4 rounded"
+            id="buttonC">
+            Model C
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pl-8 pt-8 pr-4 flex items-center">
+      <div class="pr-4">
+        <button
+          class="bg-blue-400 hover:bg-blue-600 text-white font-serif py-2 px-4 rounded flex items-center">
+          Process
+          <span class="material-icons pl-2"> settings </span>
+        </button>
+      </div>
+      <button
+        class="bg-green-400 hover:bg-green-600 text-white font-serif py-2 px-4 rounded flex items-center">
+        Export Location
+        <span class="material-icons pl-2"> file_download </span>
+      </button>
+    </div>
+  </body>
+  <script src="openfilescript.js"></script>
+</html>
